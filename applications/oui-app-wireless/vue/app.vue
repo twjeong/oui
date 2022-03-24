@@ -52,7 +52,8 @@ export default {
       modes: [
         ['ap', this.$t('wireless.Access Point')],
         ['sta', this.$t('wireless.Client')],
-        ['adhoc', this.$t('wireless.Ad-Hoc')]
+        ['ap-wds', this.$t('wireless.Access Point (WDS)')],
+        ['sta-wds', this.$t('wireless.Client (WDS)')]
       ],
       interfaces: [],
       encryptions: [

@@ -19,6 +19,8 @@
     "MAC-List": "MAC-List",
     "Access Point": "Access Point",
     "Client": "Client",
+    "Access Point (WDS)": "Access Point (WDS)",
+    "Client (WDS)": "Client (WDS)",
     "Ad-Hoc": "Ad-Hoc",
     "No encryption": "No encryption",
     "mixed": "mixed",

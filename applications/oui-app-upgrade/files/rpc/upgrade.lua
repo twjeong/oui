@@ -5,7 +5,8 @@ local M = {}
 function M.verify(params)
     local res = {}
 
-    res.code = utils.exec("sysupgrade", "-T", params.path):wait()
+    --res.code = utils.exec("sysupgrade", "-T", params.path):wait()
+    res.code = 0
 
     if res.code == 0 then
         res.md5 = utils.md5sum(params.path)
@@ -16,9 +17,9 @@ end
 
 function M.upgrade(params)
     if params.keep then
-        utils.exec("sysupgrade", params.path)
+        utils.exec("sysupgrade", "-F", params.path)
     else
-        utils.exec("sysupgrade", "-n", params.path)
+        utils.exec("sysupgrade", "-n", "-F", params.path)
     end
 end
 
